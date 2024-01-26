@@ -1,0 +1,87 @@
+// LOCAL
+### GET home
+GET http://localhost:3000
+
+### GET all cars
+GET http://localhost:3000/cars
+
+### GET specific contact
+GET http://localhost:3000/cars/659f0cf2ea5421b2800b9a1b
+
+### Add contact (POST)
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{ 
+  "year": "1964",
+  "make": "Ford",
+  "model": "Galaxy 500",
+  "color": "Red",
+  "engine": "289 ci",
+  "transmission-type": "Manual",
+  "transmission-gears": "3",
+  "shifter-location": "Steering Column"
+}
+
+### Update contact (PUT)
+PUT http://localhost:3000/cars/659f0eb7ea5421b2800b9a1c
+Content-Type: application/json
+{ 
+  "_id": "",
+  "year": "1964",
+  "make": "Ford",
+  "model": "Galaxy 500",
+  "color": "Red",
+  "engine": "289 ci",
+  "transmission-type": "Manual",
+  "transmission-gears": "3",
+  "shifter-location": "Steering Column"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/cars/659f0eb7ea5421b2800b9a1c
+
+
+
+// PRODUCTION
+### GET home
+GET https://cse341bh-cars.onrender.com
+
+### GET all cars
+GET https://cse341bh-cars.onrender.com/cars
+
+### GET specific contact
+GET https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+
+### Add contact (POST contact)
+POST https://cse341bh-cars.onrender.com/cars
+Content-Type: application/json
+
+{ 
+  "year": "1964",
+  "make": "Ford",
+  "model": "Galaxy 500",
+  "color": "Red",
+  "engine": "289 ci",
+  "transmission-type": "Manual",
+  "transmission-gears": "3",
+  "shifter-location": "Steering Column"
+}
+
+### Change contact information (PUT)
+PUT https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+Content-Type: application/json
+
+{ 
+  "year": "1964",
+  "make": "Ford",
+  "model": "Galaxy 500",
+  "color": "Red",
+  "engine": "289 ci",
+  "transmission-type": "Manual",
+  "transmission-gears": "3",
+  "shifter-location": "Steering Column"
+}
+
+### Remove a contact (DELETE)
+DELETE https://cse341bh-cars.onrender.com/cars/65a8d9c854475360b5b72fe8
