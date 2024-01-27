@@ -1,0 +1,89 @@
+// LOCAL
+### GET home
+GET http://localhost:3001
+
+### GET all cars
+GET http://localhost:3001/cars
+
+### GET specific car
+GET http://localhost:3001/cars/65b4482f09db0c26eaf35825
+
+### Add car (POST)
+POST http://localhost:3001/cars
+Content-Type: application/json
+
+{ 
+  "year": "1972",
+  "make": "Ford",
+  "model": "Capri",
+  "color": "Blue",
+  "engine": "2600 cc",
+  "transmission": "Manual",
+  "gears": "4",
+  "shifter": "Console"
+}
+
+### Update car (PUT)
+PUT http://localhost:3001/cars/65b4482f09db0c26eaf35825
+Content-Type: application/json
+
+{ 
+  "_id": "65b4482f09db0c26eaf35825",
+  "year": "1969",
+  "make": "Ford",
+  "model": "Mustang Mach I",
+  "color": "Red",
+  "engine": "351 ci",
+  "transmission": "Manual",
+  "gears": "4",
+  "shifter": "Console"
+}
+
+### Delete car
+DELETE http://localhost:3001/cars/65b4482f09db0c26eaf35825
+
+
+
+// PRODUCTION
+### GET home
+GET https://cse341bh-cars.onrender.com
+
+### GET all cars
+GET https://cse341bh-cars.onrender.com/cars
+
+### GET specific car
+GET https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+
+### Add car (POST car)
+POST https://cse341bh-cars.onrender.com/cars
+Content-Type: application/json
+
+{ 
+  "year": "1971",
+  "make": "Chevrolet",
+  "model": "Vega",
+  "color": "Orange",
+  "engine": "2300 cc",
+  "transmission": "Manual",
+  "gears": "4",
+  "shifter": "Floor"
+}
+
+### Change car information (PUT)
+PUT https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+Content-Type: application/json
+
+{ 
+  "_id": "65b4422d80b21428b21231af",
+  "year": "1964",
+  "make": "Ford",
+  "model": "Galaxy 500",
+  "color": "Red",
+  "engine": "289 ci",
+  "transmission-type": "Manual",
+  "transmission-gears": "3",
+  "shifter-location": "Steering Column"
+}
+
+### Remove a car (DELETE)
+DELETE https://cse341bh-cars.onrender.com/cars/65a8d9c854475360b5b72fe8

@@ -6,4 +6,6 @@ router.use('/', require('./home'));
 
 router.use('/cars', require('./cars'));
 
+router.use('/dogs', require('./dogs'));
+
 module.exports = router;

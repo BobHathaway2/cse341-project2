@@ -5,7 +5,7 @@
     "description": "Contacts API",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "localhost:3001",
   "basePath": "/",
   "schemes": [
     "http",
@@ -38,10 +38,10 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/cars/{id}": {
       "get": {
         "tags": [
-          "Contacts"
+          "cars"
         ],
         "description": "",
         "produces": [
@@ -63,7 +63,7 @@
       },
       "put": {
         "tags": [
-          "Contacts"
+          "cars"
         ],
         "description": "",
         "parameters": [
@@ -79,19 +79,28 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "year": {
                   "example": "any"
                 },
-                "lastName": {
+                "make": {
                   "example": "any"
                 },
-                "email": {
+                "model": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "color": {
                   "example": "any"
                 },
-                "birthday": {
+                "engine": {
+                  "example": "any"
+                },
+                "transmission": {
+                  "example": "any"
+                },
+                "gears": {
+                  "example": "any"
+                },
+                "shifter": {
                   "example": "any"
                 }
               }
@@ -102,9 +111,6 @@
           "204": {
             "description": "No Content"
           },
-          "422": {
-            "description": "Unprocessable Entity"
-          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -112,7 +118,7 @@
       },
       "delete": {
         "tags": [
-          "Contacts"
+          "cars"
         ],
         "description": "",
         "parameters": [
@@ -133,10 +139,10 @@
         }
       }
     },
-    "/contacts/": {
+    "/cars/": {
       "get": {
         "tags": [
-          "Contacts"
+          "cars"
         ],
         "description": "",
         "produces": [
@@ -150,7 +156,7 @@
       },
       "post": {
         "tags": [
-          "Contacts"
+          "cars"
         ],
         "description": "",
         "parameters": [
@@ -160,19 +166,28 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "year": {
                   "example": "any"
                 },
-                "lastName": {
+                "make": {
                   "example": "any"
                 },
-                "email": {
+                "model": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "color": {
                   "example": "any"
                 },
-                "birthday": {
+                "engine": {
+                  "example": "any"
+                },
+                "transmission": {
+                  "example": "any"
+                },
+                "gears": {
+                  "example": "any"
+                },
+                "shifter": {
                   "example": "any"
                 }
               }
@@ -182,9 +197,6 @@
         "responses": {
           "204": {
             "description": "No Content"
-          },
-          "422": {
-            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
