@@ -45,8 +45,24 @@ const saveCar = (req, res, next) => {
     });
   };
   
-
+  const checkMongoId = (req, res, next) => {
+    const validationRule = {
+      id: 'required|min:24|max:24|string'
+    };
+    validator(req.params, validationRule, {}, (err, status) => {
+      if (!status) {
+        res.status(412).send({
+          success: false,
+          message: 'Validation failed',
+          data: err
+        });
+      } else {
+        next();
+      }
+    });
+  }
 module.exports = {
   saveDog,
-  saveCar
+  saveCar,
+  checkMongoId
 };

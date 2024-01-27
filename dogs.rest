@@ -6,7 +6,7 @@ GET http://localhost:3001
 GET http://localhost:3001/dogs
 
 ### GET specific dog
-GET http://localhost:3001/dogs/<id>
+GET http://localhost:3001/dogs/65b454770e9bd46d41178c15
 
 ### Add dog (POST)
 POST http://localhost:3001/dogs
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ### Update dog (PUT)
-PUT http://localhost:3001/dogs/<id>
+PUT http://localhost:3001/dogs/65b454770e9bd46d41178c15
 Content-Type: application/json
 
 { 
@@ -43,7 +43,7 @@ GET https://cse341bh-project2.onrender.com
 GET https://cse341bh-project2.onrender.com/dogs
 
 ### GET specific dog
-GET https://cse341bh-project2.onrender.com/dogs/<id>
+GET https://cse341bh-project2.onrender.com/dogs/65b454770e9bd46d41178c15
 
 ### Add dog (POST dog)
 POST https://cse341bh-project2.onrender.com/dogs
@@ -57,14 +57,14 @@ Content-Type: application/json
 }
 
 ### Change dog information (PUT)
-PUT https://cse341bh-project2.onrender.com/dogs/<id>
+PUT https://cse341bh-project2.onrender.com/dogs/65b454770e9bd46d41178c15
 Content-Type: application/json
 
 { 
-  "name": "Griz",
-  "breed": "Brazilian Mastiff",
-  "gender": "Male",
-  "color": "Brown"
+    "name": "Grizzer",
+    "breed": "Brazilian Mastiff",
+    "gender": "Male",
+    "color": "Brown"
 }
 
 ### Remove a dog (DELETE)
