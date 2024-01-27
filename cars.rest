@@ -6,7 +6,7 @@ GET http://localhost:3001
 GET http://localhost:3001/cars
 
 ### GET specific car
-GET http://localhost:3001/cars/65b4482f09db0c26eaf35825
+GET http://localhost:3001/cars/65b44b7e09db0c26eaf3582a
 
 ### Add car (POST)
 POST http://localhost:3001/cars
@@ -24,11 +24,11 @@ Content-Type: application/json
 }
 
 ### Update car (PUT)
-PUT http://localhost:3001/cars/65b4482f09db0c26eaf35825
+PUT http://localhost:3001/cars/65b4491409db0c26eaf35826
 Content-Type: application/json
 
 { 
-  "_id": "65b4482f09db0c26eaf35825",
+  "_id": "65b4491409db0c26eaf35826",
   "year": "1969",
   "make": "Ford",
   "model": "Mustang Mach I",
@@ -40,22 +40,20 @@ Content-Type: application/json
 }
 
 ### Delete car
-DELETE http://localhost:3001/cars/65b4482f09db0c26eaf35825
-
-
+DELETE http://localhost:3001/cars/<id>
 
 // PRODUCTION
 ### GET home
-GET https://cse341bh-cars.onrender.com
+GET https://cse341bh-project2.onrender.com
 
 ### GET all cars
-GET https://cse341bh-cars.onrender.com/cars
+GET https://cse341bh-project2.onrender.com/cars
 
 ### GET specific car
-GET https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+GET https://cse341bh-project2.onrender.com/cars/659f0f04ea5421b2800b9a1d
 
 ### Add car (POST car)
-POST https://cse341bh-cars.onrender.com/cars
+POST https://cse341bh-project2.onrender.com/cars
 Content-Type: application/json
 
 { 
@@ -70,20 +68,20 @@ Content-Type: application/json
 }
 
 ### Change car information (PUT)
-PUT https://cse341bh-cars.onrender.com/cars/659f0f04ea5421b2800b9a1d
+PUT https://cse341bh-project2.onrender.com/cars/659f0f04ea5421b2800b9a1d
 Content-Type: application/json
 
 { 
-  "_id": "65b4422d80b21428b21231af",
-  "year": "1964",
-  "make": "Ford",
-  "model": "Galaxy 500",
-  "color": "Red",
-  "engine": "289 ci",
-  "transmission-type": "Manual",
-  "transmission-gears": "3",
-  "shifter-location": "Steering Column"
+    "_id": "65b447ec09db0c26eaf35824",
+    "year": "1971",
+    "make": "Dodge",
+    "model": "Charger 500",
+    "color": "White/Tan",
+    "engine": "383 ci",
+    "transmission": "Automatic",
+    "gears": "3",
+    "shifter": "Console"
 }
 
 ### Remove a car (DELETE)
-DELETE https://cse341bh-cars.onrender.com/cars/65a8d9c854475360b5b72fe8
+DELETE https://cse341bh-project2.onrender.com/cars/<id>

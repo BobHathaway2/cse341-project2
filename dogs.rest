@@ -6,7 +6,7 @@ GET http://localhost:3001
 GET http://localhost:3001/dogs
 
 ### GET specific dog
-GET http://localhost:3001/dogs/65b4482f09db0c26eaf35825
+GET http://localhost:3001/dogs/<id>
 
 ### Add dog (POST)
 POST http://localhost:3001/dogs
@@ -16,70 +16,56 @@ Content-Type: application/json
   "name": "Griz",
   "breed": "Brazilian Mastiff",
   "gender": "Male",
-  "color": "Brown"
+  "color": "Browndsfjadlfjsa;jdfa"
 }
 
 ### Update dog (PUT)
-PUT http://localhost:3001/dogs/65b4482f09db0c26eaf35825
+PUT http://localhost:3001/dogs/<id>
 Content-Type: application/json
 
 { 
-  "_id": "65b4482f09db0c26eaf35825",
-  "year": "1969",
-  "make": "Ford",
-  "model": "Mustang Mach I",
-  "color": "Red",
-  "engine": "351 ci",
-  "transmission": "Manual",
-  "gears": "4",
-  "shifter": "Console"
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Brown"
 }
 
 ### Delete dog
-DELETE http://localhost:3001/dogs/65b4482f09db0c26eaf35825
+DELETE http://localhost:3001/dogs/<id>
 
 
 
 // PRODUCTION
 ### GET home
-GET https://cse341bh-dogs.onrender.com
+GET https://cse341bh-project2.onrender.com
 
 ### GET all dogs
-GET https://cse341bh-dogs.onrender.com/dogs
+GET https://cse341bh-project2.onrender.com/dogs
 
 ### GET specific dog
-GET https://cse341bh-dogs.onrender.com/dogs/659f0f04ea5421b2800b9a1d
+GET https://cse341bh-project2.onrender.com/dogs/<id>
 
 ### Add dog (POST dog)
-POST https://cse341bh-dogs.onrender.com/dogs
+POST https://cse341bh-project2.onrender.com/dogs
 Content-Type: application/json
 
 { 
-  "year": "1971",
-  "make": "Chevrolet",
-  "model": "Vega",
-  "color": "Orange",
-  "engine": "2300 cc",
-  "transmission": "Manual",
-  "gears": "4",
-  "shifter": "Floor"
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Brown"
 }
 
 ### Change dog information (PUT)
-PUT https://cse341bh-dogs.onrender.com/dogs/659f0f04ea5421b2800b9a1d
+PUT https://cse341bh-project2.onrender.com/dogs/<id>
 Content-Type: application/json
 
 { 
-  "_id": "65b4422d80b21428b21231af",
-  "year": "1964",
-  "make": "Ford",
-  "model": "Galaxy 500",
-  "color": "Red",
-  "engine": "289 ci",
-  "transmission-type": "Manual",
-  "transmission-gears": "3",
-  "shifter-location": "Steering Column"
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Brown"
 }
 
 ### Remove a dog (DELETE)
-DELETE https://cse341bh-dogs.onrender.com/dogs/65a8d9c854475360b5b72fe8
+DELETE https://cse341bh-project2.onrender.com/dogs/<id>
